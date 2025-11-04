@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forno de Gelo - Alimentos Congelados</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/variaveis.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+</head>
+<body>
+
+    <header class="cabecalho">
+        <nav class="navegacao">
+            <div class="logo">
+                <h1>Forno de Gelo</h1>
+                <img src="./src/images/logo-site.jpeg" alt="logo-loja">
+            </div>
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="banner">
+            <div class="banner-conteudo">
+                <h2>Praticidade e Sabor na sua Mesa</h2>
+                <p>Alimentos congelados de alta qualidade para seu dia a dia</p>
+                <a href="#produtos" class="botao-primario">Ver Produtos</a>
+            </div>
+        </section>
+
+        <section id="produtos" class="produtos">
+            <h2>Nossos Produtos</h2>
+            <div class="grid-produtos">
+                <article class="card-produto">
+                    <div class="produto-imagem"></div>
+                    <h3>Pratos Prontos</h3>
+                    <p>Refeições completas e balanceadas</p>
+                </article>
+                <article class="card-produto">
+                    <div class="produto-imagem"></div>
+                    <h3>Vegetais Congelados</h3>
+                    <p>Vegetais frescos e selecionados</p>
+                </article>
+                <article class="card-produto">
+                    <div class="produto-imagem"></div>
+                    <h3>Carnes Porcionadas</h3>
+                    <p>Cortes selecionados e embalados</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <h2>Sobre Nós</h2>
+            <div class="sobre-conteudo">
+                <div class="sobre-texto">
+                    <p>Somos especialistas em alimentos congelados de alta qualidade, oferecendo praticidade sem abrir mão do sabor.</p>
+                    <ul class="beneficios">
+                        <li>Produtos 100% naturais</li>
+                        <li>Processo de congelamento rápido</li>
+                        <li>Embalagens sustentáveis</li>
+                        <li>Entrega em todo Brasil</li>
+                    </ul>
+                </div>
+                <div class="sobre-imagem"></div>
+            </div>
+        </section>
+
+        <section id="contato" class="contato">
+            <h2>Entre em Contato</h2>
+            <div class="contato-container">
+                <form class="formulario-contato">
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="botao-primario">Enviar Mensagem</button>
+                </form>
+                <div class="informacoes-contato">
+                    <h3>Informações de Contato</h3>
+                    <address>
+                        <p>📍 Rua dos Congelados, 123</p>
+                        <p>📱 (11) 99999-9999</p>
+                        <p>📧 contato@fornodegelo.com.br</p>
+                    </address>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <div class="rodape-info">
+                <h3>Forno de Gelo</h3>
+                <p>Sua loja de congelados de confiança</p>
+            </div>
+            <div class="redes-sociais">
+                <h3>Siga-nos</h3>
+                <div class="links-sociais">
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="WhatsApp">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+        <div class="direitos">
+            <p>&copy; 2023 Forno de Gelo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
