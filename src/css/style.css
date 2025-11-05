@@ -10,14 +10,31 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 28px;
-    background-color: blueviolet;
+    background-color: brown;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* garante que o container ocupe toda a largura disponível */
 }
 
 .logo img{
     height: 4.5rem;
+    display: block;
+    object-fit: cover;
 }
 
-.nav-center ul {
+.navegacao{
+    display: flex;
+    align-items: center;
+}
+
+.navegacao ul{
     display: flex;
     gap: 2.5rem;
+    list-style: none;    
 }
+
+
