@@ -1,4 +1,23 @@
-.cabecalho{
-    background-color: blueviolet;
+.cabecalho {
+    position: fixed;
+    top: 1.25rem;
+    left: 50%;
+    transform: translate(-50%);
+    width: calc(100% - 13.125rem);
+    border-radius: 15px;
+    z-index: 1000;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 28px;
+    background-color: blueviolet;
+}
+
+.logo img{
+    height: 4.5rem;
+}
+
+.nav-center ul {
+    display: flex;
+    gap: 2.5rem;
 }
