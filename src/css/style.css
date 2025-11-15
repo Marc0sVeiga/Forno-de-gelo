@@ -39,6 +39,7 @@ footer{
 .navegacao{
     display: flex;
     align-items: center;
+    padding: 10px;
 }
 
 .navegacao ul{
