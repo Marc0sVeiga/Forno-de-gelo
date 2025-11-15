@@ -9,10 +9,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 28px;
-    background-color: brown;
+    padding: 10px 32px;
+    background-color: #ffffff;
 }
 
+main{
+    background-color: wheat;
+}
+footer{
+    background-color: rgb(126, 112, 94);
+}
 .nav-container{
     display: flex;
     justify-content: space-between;
@@ -33,8 +39,16 @@
 
 .navegacao ul{
     display: flex;
-    gap: 2.5rem;
-    list-style: none;    
+    gap: 3.75rem;
+    list-style: none;
 }
+
+.navegacao ul a{
+    color: rgb(104, 45, 48);
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+
 
 
