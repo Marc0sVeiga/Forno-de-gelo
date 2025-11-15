@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 32px;
+    padding: 5px 32px;
     background-color: #ffffff;
 }
 
@@ -24,6 +24,10 @@ footer{
     justify-content: space-between;
     align-items: center;
     width: 100%; /* garante que o container ocupe toda a largura disponível */
+}
+
+.nav-container a:hover img{
+    opacity: 0.7;
 }
 
 .logo img{
@@ -43,11 +47,17 @@ footer{
     list-style: none;
 }
 
-.navegacao ul a{
-    color: rgb(104, 45, 48);
+.navegacao a{
+    color: #9e4223;
     font-weight: 700;
     font-size: 0.95rem;
 }
+
+.navegacao a:hover{
+    color: rgb(195, 91, 0);
+    opacity: 0.7;
+}
+
 
 
 
