@@ -4,15 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forno de Gelo - Alimentos Congelados</title>
-    
+
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./src/icones/logo-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./src/icones/favicon-16x16.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./src/icones/apple-touch-180x180.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="./src/icones/android-chrome-192x192.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="./src/icones/android-chrome-512x512.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/icones/logo-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./src/icones/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./src/icones/apple-touch-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./src/icones/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="./src/icones/android-chrome-512x512.png"
+    />
     <meta name="theme-color" content="#ffffff" />
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,15 +47,11 @@
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/variaveis.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
-    
   </head>
 
   <body>
-
     <header class="cabecalho">
-      
       <nav class="nav-container">
-
         <a href="/" title="Forno de Gelo - Alimentos Congelados">
           <h1 class="logo">
             <img
@@ -62,45 +82,84 @@
     </header>
 
     <main>
+      <section class="hero-section">
+        <div class="hero-overlay">
+          <div class="hero-content">
+            <h2 class="hero-tittle">Praticidade e Sabor na sua Mesa</h2>
 
-    <section class="hero-section">
-      <div class="hero-overlay">
+            <p class="hero-description">
+              Alimentos congelados de alta qualidade para seu dia a dia
+            </p>
 
-        <div class="hero-content">
-
-          <h2 class="hero-tittle">Praticidade e Sabor na sua Mesa</h2>
-          
-          <p class="hero-description">Alimentos congelados de alta qualidade para seu dia a dia</p>
-        
-          <div class="hero-buttons">
-            <a class="btn btn-outline" href="#">Ver Cardápio</a>
-            <a class="btn btn-filled" href="#">Comprar</a>
+            <div class="hero-buttons">
+              <a class="btn btn-outline" href="#">Ver Cardápio</a>
+              <a class="btn btn-filled" href="#">Comprar</a>
+            </div>
           </div>
-
         </div>
-      
-      </div>
-    </section>
-
-      <!-- <section id="produtos" class="produtos">
-        <h2>Nossos Produtos</h2>
-        <div class="grid-produtos">
-          <article class="card-produto">
-            <div class="produto-imagem"></div>
-            <h3>Pratos Prontos</h3>
-            <p>Refeições completas e balanceadas</p>
-          </article>
-          <article class="card-produto">
-            <div class="produto-imagem"></div>
-            <h3>Vegetais Congelados</h3>
-            <p>Vegetais frescos e selecionados</p>
-          </article>
-          <article class="card-produto">
-            <div class="produto-imagem"></div>
-            <h3>Carnes Porcionadas</h3>
-            <p>Cortes selecionados e embalados</p>
-          </article>
+      </section>
+      <!-- Seção cardapio  -->
+      <section class="content cardapio-section">
+        
+        <div class="cardapio-section">
+          <a href="#" class="cardapio-link">
+            <span class="overlay"></span>
+            <span class="btn btn-outline">Lanches</span>
+          </a>
         </div>
+
+        <div class="cardapio-section">
+          <a href="#" class="cardapio-link">
+            <span class="overlay"></span>
+            <span class="btn btn-outline">Refeições</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Seção Produtos  -->
+      <section class="content product-section">
+       
+        <div class="category product-section">
+          <a href="#" class="product-link">
+            <span class="overlay"></span>
+            <span class="btn btn-outline">01</span>
+          </a>
+        </div>
+
+        <div class="product-section">
+          <a href="#" class="product-link">
+            <span class="overlay"></span>
+            <span class="btn btn-outline">02</span>
+          </a>
+        </div>
+        <div class="product-section">
+          <a href="#" class="product-link">
+            <span class="overlay"></span>
+            <span class="btn btn-outline">03</span>
+          </a>
+        </div>
+
+        <div class="product-section">
+          <a href="#" class="product-link">
+            <span class="overlay"></span>
+            <span class="btn btn-outline">04</span>
+          </a>
+        </div>
+
+        <div class="product-section">
+          <a href="#" class="category product-link">
+            <span class="overlay"></span>
+            <span class="btn btn-outline">05</span>
+          </a>
+        </div>
+
+        <div class="product-section">
+          <a href="#" class="product-link">
+            <span class="overlay"></span>
+            <span class="btn btn-outline">06</span>
+          </a>
+        </div>
+
       </section>
 
       <section id="sobre" class="sobre">
@@ -172,6 +231,7 @@
       <div class="direitos">
         <p>&copy; 2023 Forno de Gelo. Todos os direitos reservados.</p>
       </div>
-    </footer> -->
+    </footer>
+    -->
   </body>
 </html>
