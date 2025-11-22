@@ -1,0 +1,36 @@
+body {
+    font-family: var(--fonte-principal);
+}
+
+main {
+    background-color: wheat;
+}
+
+footer {
+    background-color: rgb(126, 112, 94);
+}
+
+.btn {
+    border-radius: 25px;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 8px 20px;
+    transition: background-color 0.3s ease, border 0.3s;
+}
+
+.btn:hover {
+    background-color: #9e4223;
+    color: #ffffff;
+    border-color: #9e4223;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+}
+
+.btn-filled {
+    background-color: #ffffff;
+    color: #9e4223;
+}
