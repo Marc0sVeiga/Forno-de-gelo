@@ -1,3 +1,15 @@
+body {
+    font-family: var(--fonte-principal);
+}
+
+main {
+    background-color: wheat;
+}
+
+footer {
+    background-color: rgb(126, 112, 94);
+}
+
 .cabecalho {
     position: fixed;
     top: 1.25rem;
@@ -12,15 +24,6 @@
     padding: 5px 32px;
     background-color: #ffffff;
 }
-
-main {
-    background-color: wheat;
-}
-
-footer {
-    background-color: rgb(126, 112, 94);
-}
-
 .nav-container {
     display: flex;
     justify-content: space-between;
