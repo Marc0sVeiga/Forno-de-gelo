@@ -3,7 +3,7 @@
     top: 2rem;
     left: 50%;
     transform: translate(-50%);
-    width: calc(100% - 13.125rem);
+    width: calc(100% - 300px);
     border-radius: 15px;
     z-index: 999;
     display: flex;
@@ -109,7 +109,8 @@
 }
 
 .sobre{
-    height: 750px;
+    max-height: 900px;
+    flex-grow: 1;   
     background-color: #9e4223;
     padding: 2rem;
     margin: 1.5rem;
@@ -132,14 +133,15 @@
 
 .product-section {
     background-color: #ffffff;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding: 1.5rem;
+    margin: 3.5rem 0 1.5rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 30px;
-    
+    border-radius: 20px;    
 }
+
 .product-card {
 	position: relative;
 	width: 500px;
