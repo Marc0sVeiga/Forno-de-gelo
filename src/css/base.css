@@ -1,3 +1,12 @@
+/* ==== AJUSTE PARA ANCORAGEM DO MENU ==== */
+html {
+    scroll-behavior: smooth; /* Rolagem suave */
+}
+
+section {
+    scroll-margin-top: 140px; /* Ajuste conforme a altura do seu header */
+}
+
 body {
     font-family: var(--fonte-principal);
     background-color: wheat;
@@ -7,6 +16,9 @@ main{
     padding: 7rem 2.5rem 0rem;
     max-width: 1380px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
 }
 
 footer {
