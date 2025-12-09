@@ -108,7 +108,7 @@
 }
 
 .sobre{
-    max-height: 900px;
+    min-height: 850px;
     flex-grow: 1;  
     background-color: #9e4223;
     padding: 2rem;
