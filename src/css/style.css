@@ -12,7 +12,7 @@
     padding: 0px 32px;
     background-color: #ffffff;
 }
-.nav-container {
+.navegacao-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,7 +20,7 @@
     /* garante que o container ocupe toda a largura disponível */
 }
 
-.nav-container a:hover img {
+.navegacao-container a:hover img {
     opacity: 0.7;
 }
 
@@ -54,7 +54,7 @@
     text-decoration: underline;
 }
 
-.hero-section {
+.secao-hero {
     background: url(../../src/images/banner-hero.png) no-repeat center;
     background-size: cover;
 
@@ -64,7 +64,7 @@
     margin: 1rem 0;
 }
 
-.hero-overlay {
+.hero-sobreposicao {
     width: 100%;
     height: 100%;
     display: flex;
@@ -72,32 +72,32 @@
     padding: 0 4rem;
 }
 
-.hero-content {
+.hero-conteudo {
     color: #ffffff;
     align-items: center;
     padding-bottom: 3.8rem;
     /* margin-left: 5rem; */
 }
 
-.hero-buttons {
+.hero-botoes {
     display: flex;
     gap: 20px;
     justify-content: end;
     align-items: center;
     margin-right: 5rem;
 }
-.hero-tittle {
+.hero-titulo {
    text-shadow: 3px 1px 4px rgba(0, 0, 0, 0.5); 
 }
 
-.hero-content .hero-tittle {
+.hero-conteudo .hero-titulo {
     font-size: 2.8rem;
     margin-bottom: 20px;
     font-weight: 700;
     line-height: 36px;
 }
 
-.hero-description {
+.hero-descricao {
     
     font-size: 1.75rem;
     font-weight: 400;
@@ -121,16 +121,16 @@
     opacity: 0.7;
 }
 
-.sobre-title{
+.sobre-titulo{
     padding: 2rem;
     font-size: 1.05rem;
 }
 
-.sobre-description{
+.sobre-descricao{
     letter-spacing: 0.05rem;
 }
 
-.product-section {
+.secao-produtos {
     background-color: #ffffff;
 	padding: 1.5rem;
     margin: 2rem 0 1.5rem;
@@ -141,7 +141,7 @@
     border-radius: 20px;    
 }
 
-.product-card {
+.card-produto {
 	position: relative;
 	width: 500px;
 	height: 317px;
@@ -149,14 +149,14 @@
 	overflow: hidden;
 }
 
-.overlay{
+.sobreposicao{
 	position: absolute;
 	inset: 0;
 	background-color: rgba(0, 0, 0, 0.25);
 	z-index: 1;
 }
 
-.category-name {
+.nome-categoria {
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -193,7 +193,7 @@
 }
 
 @media (max-width:500px) {
-	.category-card{
+	.card-produto{
 		width: 100%;
 	}
 }
