@@ -137,7 +137,14 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 30px;
-    border-radius: 20px;    
+    border-radius: 20px;
+    width: 100%;
+    
+}
+
+.produtos-container{
+    display: flex;
+    
 }
 
 .card-produto {
@@ -146,6 +153,19 @@
 	height: 317px;
 	border-radius: 15px;
 	overflow: hidden;
+
+    padding: 10px;
+    margin: 10px;
+}
+
+.produto-nome{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.produto-info{
+    padding: 10px;
+    margin: 10px;
 }
 
 .sobreposicao{
