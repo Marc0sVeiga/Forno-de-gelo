@@ -51,6 +51,7 @@
     <link rel="stylesheet" href="./src/css/variaveis.css" />
     <link rel="stylesheet" href="./src/css/base.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/efeito.css">
   </head>
 
   <body>
@@ -438,5 +439,39 @@
         <p>&copy; 2025 Forno de Gelo. Todos os direitos reservados.</p>
       </div>
     </footer>
+    <div class="neve-container"></div>
+    <script>
+    // Gerador de neve
+    function criarNeve() {
+        const neveContainer = document.querySelector('.neve-container');
+        const quantidade = 50; // Quantidade de flocos
+
+        for (let i = 0; i < quantidade; i++) {
+            const floco = document.createElement('div');
+            floco.classList.add('floco-neve');
+            floco.innerHTML = '❄'; // Símbolo de floco
+            
+            // Posição aleatória
+            floco.style.left = Math.random() * 100 + '%';
+            
+            // Tamanho aleatório
+            floco.style.fontSize = (Math.random() * 1.5 + 0.5) + 'em';
+            
+            // Duração da animação aleatória
+            floco.style.animationDuration = (Math.random() * 3 + 5) + 's';
+            
+            // Delay aleatório
+            floco.style.animationDelay = Math.random() * 5 + 's';
+            
+            // Opacidade aleatória
+            floco.style.opacity = Math.random() * 0.7 + 0.3;
+            
+            neveContainer.appendChild(floco);
+        }
+    }
+
+    // Iniciar neve quando a página carregar
+    window.addEventListener('load', criarNeve);
+</script>
   </body>
 </html>

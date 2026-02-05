@@ -124,6 +124,7 @@
 .sobre-titulo{
     padding: 2rem;
     font-size: 1.05rem;
+    color: #ffffff;
 }
 
 .sobre-descricao{
@@ -132,30 +133,62 @@
 
 .secao-produtos {
     background-color: #ffffff;
-	padding: 5rem;    
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 30px;
-    border-radius: 20px;
-    width: 100%;
-    
-}
-
-.produtos-container{
+    padding: 3rem 2rem; /* Reduzido e responsivo */
+    min-height: 600px; /* Altura mínima, como no .sobre */
+    flex-grow: 1; /* Permite crescimento proporcional */
     display: flex;
-    
+    flex-direction: column; /* Importante para organizar título e container */
+    align-items: center;
+    gap: 30px;
+    border-radius: 15px;
+    margin: 2rem 0; /* Mesma margem do .sobre */
 }
 
-.card-produto {
-	position: relative;
-	width: 500px;
-	height: 317px;
-	border-radius: 15px;
-	overflow: hidden;
+.produtos-titulo {
+    text-align: center;
+    width: 100%;
+}
 
-    padding: 10px;
-    margin: 10px;
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra de linha */
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 1400px; /* Limita largura máxima */
+}
+
+/* O container principal do card */
+.card-produto {
+  display: flex;
+  flex-direction: row; /* Garante que fiquem lado a lado */
+  align-items: flex-start; /* Alinha o conteúdo pelo topo */
+  gap: 20px; /* Espaço entre a imagem e o texto */
+  padding: 20px;
+  background-color: #f5deb37c; /* Cor que aparece na sua imagem */
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+/* A caixa da imagem */
+.card-imagem {
+  flex-shrink: 0; /* Não deixa a imagem "esmagar" */
+  width: 300px;   /* Ajuste essa largura conforme achar melhor */
+}
+
+.card-imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+/* A caixa do conteúdo (texto) */
+.card-conteudo {
+  flex-grow: 1; /* Aqui entra o que você lembrou: ele cresce para ocupar o resto */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .produto-nome{
