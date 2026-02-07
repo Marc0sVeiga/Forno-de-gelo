@@ -1,51 +1,56 @@
 /* ==== AJUSTE PARA ANCORAGEM DO MENU ==== */
 html {
-    scroll-behavior: smooth; /* Rolagem suave */
+  scroll-behavior: smooth; /* Rolagem suave */
 }
 
 section {
-    scroll-margin-top: 140px; /* Ajuste conforme a altura do seu header */
+  scroll-margin-top: 140px; /* Ajuste conforme a altura do seu header */
 }
 
 body {
-    font-family: var(--fonte-principal);
-    background-color: wheat;
+  font-family: var(--fonte-principal);
+  background-color: rgba(59, 130, 246, 0.2);
+}
+main {
+  padding: 7rem 2.5rem 0rem;
+  max-width: 1380px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
 
-}
-main{
-    padding: 7rem 2.5rem 0rem;
-    max-width: 1380px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 7rem;
-}
 
 footer {
-    background-color: rgb(126, 112, 94);
+  background: linear-gradient(135deg, #0c4a6e 0%, #075985 50%, #0369a1 100%);
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
 }
 
 .botao {
-    border-radius: 25px;
-    color: #ffffff;
-    font-size: 1.3rem;
-    font-weight: 600;
-    padding: 8px 20px;
-    transition: background-color 0.3s ease, border 0.3s;
+  border-radius: 25px;
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 8px 20px;
+  transition:
+    background-color 0.3s ease,
+    border 0.3s;
 }
 
 .botao:hover {
-    background-color: #9e4223;
-    color: #ffffff;
-    border-color: #9e4223;
+  box-shadow:
+    0 12px 40px rgba(59, 130, 246, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 .botao-vazado {
-    background-color: transparent;
-    border: 2px solid #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
 }
 
 .botao-preenchido {
-    background-color: #ffffff;
-    color: #9e4223;
+  background-color: #ffffff;
+  color: #00184b;
 }

@@ -217,32 +217,6 @@
 	text-align: center;
 }
 
-.um {
-	background: url() no-repeat center;
-	background-size: cover;
-}
-
-.dois {
-	background: url() no-repeat center;
-	background-size: cover;
-}
-.tres {
-	background: url() no-repeat center;
-	background-size: cover;
-}
-.quatro {
-	background: url() no-repeat center;
-	background-size: cover;
-}
-.cinco {
-	background: url() no-repeat center;
-	background-size: cover;
-}
-
-.seis {
-	background: url() no-repeat center;
-	background-size: cover;
-}
 
 @media (max-width:500px) {
 	.card-produto{
