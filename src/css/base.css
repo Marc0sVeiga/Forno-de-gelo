@@ -9,8 +9,9 @@ section {
 
 body {
   font-family: var(--fonte-principal);
-  background-color: rgba(59, 130, 246, 0.2);
+  background: linear-gradient(135deg, #e0f2f7 0%, #b2d8e5 50%, #8eb9cf 100%);
 }
+
 main {
   padding: 7rem 2.5rem 0rem;
   max-width: 1380px;
