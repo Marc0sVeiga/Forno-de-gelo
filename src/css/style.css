@@ -45,15 +45,15 @@
   color: #9e4223;
   font-weight: 400;
   font-size: 1.15rem;
- 
 }
 
 .navegacao a:hover {
   font-weight: 500;
   font-size: 1.2rem;
   color: #0369a1;
-  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.8); border-radius: 10px;
-  transition: 0.5s ease;  
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.8);
+  border-radius: 10px;
+  transition: 0.5s ease;
 }
 
 .secao-hero {
@@ -138,20 +138,26 @@
 
 .secao-produtos {
   background-color: #ffffff;
-  padding: 3rem 2rem; /* Reduzido e responsivo */
+  padding: 1rem; /* Reduzido e responsivo */
   min-height: 600px; /* Altura mínima, como no .sobre */
   flex-grow: 1; /* Permite crescimento proporcional */
   display: flex;
   flex-direction: column; /* Importante para organizar título e container */
   align-items: center;
-  gap: 30px;
+ 
   border-radius: 15px;
   margin: 2rem 0; /* Mesma margem do .sobre */
 }
 
-.produtos-titulo {
-  text-align: center;
-  width: 100%;
+.card-produto {
+  display: flex;
+  flex-direction: row; /* Garante que fiquem lado a lado */
+  align-items: flex-start; /* Alinha o conteúdo pelo topo */
+  gap: 20px; /* Espaço entre a imagem e o texto */
+  padding: 20px;
+  background-color: #a1deff64; /* Cor que aparece na sua imagem */
+  border-radius: 15px;
+  margin-bottom: 20px;
 }
 
 .produtos-container {
@@ -161,18 +167,6 @@
   gap: 30px;
   width: 100%;
   max-width: 1400px; /* Limita largura máxima */
-}
-
-/* O container principal do card */
-.card-produto {
-  display: flex;
-  flex-direction: row; /* Garante que fiquem lado a lado */
-  align-items: flex-start; /* Alinha o conteúdo pelo topo */
-  gap: 20px; /* Espaço entre a imagem e o texto */
-  padding: 20px;
-  background-color: #f5deb37c; /* Cor que aparece na sua imagem */
-  border-radius: 15px;
-  margin-bottom: 20px;
 }
 
 /* A caixa da imagem */
@@ -187,6 +181,50 @@
   border-radius: 10px;
   display: block;
 }
+
+.produtos-titulo {
+  text-align: center;
+  margin: 1rem;
+  font-size: 22px;
+  font-weight: bold;
+  color: #9e4223;
+}
+
+.art-cardapio {
+  max-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: invert(34%) sepia(14%) saturate(3891%) hue-rotate(336deg)
+    brightness(86%) contrast(93%);
+}
+
+.produto-descricao {
+  margin: 1rem;
+}
+
+.produto-detalhes {
+  color: #002a40;
+}
+
+.produto-preparo {
+  background-color: rgba(255, 255, 255, 0.5); /* Branco transparente */
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.preparo-conteudo {
+  gap: 2px;
+}
+
+.linha-produto {
+  text-align: center;
+  margin: 1.5rem;
+  color: #9e4223;
+}
+
+/* O container principal do card */
 
 /* A caixa do conteúdo (texto) */
 .card-conteudo {
