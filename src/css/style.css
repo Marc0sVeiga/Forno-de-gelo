@@ -136,6 +136,8 @@
   letter-spacing: 0.05rem;
 }
 
+/* O container principal do card */
+
 .secao-produtos {
   background-color: #ffffff;
   padding: 1rem; /* Reduzido e responsivo */
@@ -144,7 +146,6 @@
   display: flex;
   flex-direction: column; /* Importante para organizar título e container */
   align-items: center;
- 
   border-radius: 15px;
   margin: 2rem 0; /* Mesma margem do .sobre */
 }
@@ -155,18 +156,26 @@
   align-items: flex-start; /* Alinha o conteúdo pelo topo */
   gap: 20px; /* Espaço entre a imagem e o texto */
   padding: 20px;
-  background-color: #a1deff64; /* Cor que aparece na sua imagem */
+  background-color: #77b9ff33; /* Cor que aparece na sua imagem */
   border-radius: 15px;
   margin-bottom: 20px;
 }
 
-.produtos-container {
+.cardapio-titulo {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 20px;
+  font-weight: bold;
+  color: #9e4223;
+}
+
+.art-cardapio {
+  max-width: 100px;
   display: flex;
-  flex-wrap: wrap; /* Permite quebra de linha */
   justify-content: center;
-  gap: 30px;
-  width: 100%;
-  max-width: 1400px; /* Limita largura máxima */
+  align-items: center;
+  filter: invert(34%) sepia(14%) saturate(3891%) hue-rotate(336deg)
+    brightness(86%) contrast(93%);
 }
 
 /* A caixa da imagem */
@@ -183,35 +192,43 @@
 }
 
 .produtos-titulo {
-  text-align: center;
-  margin: 1rem;
-  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 20px;
   font-weight: bold;
   color: #9e4223;
 }
 
-.art-cardapio {
-  max-width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  filter: invert(34%) sepia(14%) saturate(3891%) hue-rotate(336deg)
-    brightness(86%) contrast(93%);
-}
-
 .produto-descricao {
   margin: 1rem;
-}
-
-.produto-detalhes {
+  font-size: 20px;
   color: #002a40;
 }
 
+.produto-detalhes {
+  margin: 2rem;
+  font-size: 18px;
+  color: #9e4223;
+}
+
+.sumary {
+  color: #002a40;
+  cursor: pointer;
+}
+
+.sumary:hover {
+  color: #9e4223;
+}
+
 .produto-preparo {
-  background-color: rgba(255, 255, 255, 0.5); /* Branco transparente */
+  background-color: rgb(255, 255, 255); /* Branco transparente */
   border-radius: 8px;
   padding: 10px;
   margin-bottom: 15px;
+  color: #9e4223;
+  font-weight: 500;
 }
 
 .preparo-conteudo {
@@ -223,8 +240,6 @@
   margin: 1.5rem;
   color: #9e4223;
 }
-
-/* O container principal do card */
 
 /* A caixa do conteúdo (texto) */
 .card-conteudo {
