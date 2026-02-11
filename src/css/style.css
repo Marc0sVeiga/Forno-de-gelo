@@ -113,9 +113,6 @@
   height: 100%;
   flex-grow: 1;
   background: linear-gradient(135deg, #0c4a6e 0%, #075985 50%, #0369a1 100%);
-  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  position: relative;
   padding: 2rem;
   margin: 2rem 0;
   border-radius: 15px;
@@ -123,7 +120,6 @@
   text-align: center;
   font-size: 1.25rem;
   line-height: 2rem;
-  opacity: 0.7;
 }
 
 .sobre-titulo {
@@ -181,7 +177,7 @@
 /* A caixa da imagem */
 .card-imagem {
   flex-shrink: 0; /* Não deixa a imagem "esmagar" */
-  width: 300px; /* Ajuste essa largura conforme achar melhor */
+  width:750px;
 }
 
 .card-imagem img {
@@ -208,9 +204,13 @@
 }
 
 .produto-detalhes {
-  margin: 2rem;
-  font-size: 18px;
+ 
+   background-color: rgb(255, 255, 255); /* Branco transparente */
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
   color: #9e4223;
+  font-weight: 500;
 }
 
 .sumary {
@@ -241,42 +241,18 @@
   color: #9e4223;
 }
 
-/* A caixa do conteúdo (texto) */
-.card-conteudo {
-  flex-grow: 1; /* Aqui entra o que você lembrou: ele cresce para ocupar o resto */
+.produto-rodape {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
-.produto-nome {
-  text-align: center;
-  font-size: 1.5rem;
-}
-
-.produto-info {
-  padding: 10px;
-  margin: 10px;
-}
-
-.sobreposicao {
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.25);
-  z-index: 1;
-}
-
-.nome-categoria {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  text-align: center;
-}
-
-@media (max-width: 500px) {
-  .card-produto {
-    width: 100%;
-  }
+.produto-preco {
+  font-size: 30px;
+  font-weight: bold;
+  color: #9e4223;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 2px;
 }

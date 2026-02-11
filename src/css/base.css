@@ -51,10 +51,11 @@ footer {
 }
 
 .botao-preenchido {
-  border: 2px solid #ffffff;
+  border: 2px solid #9e4223;
+  background-color: #9e4223;
 }
 
 .botao-preenchido:hover {
-  color: #00184b;
+  color: #9e4223;
   background-color: #ffffff;
 }
