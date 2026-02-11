@@ -173,7 +173,7 @@
   justify-content: center;
   gap: 5rem;
   padding: 20px;
-  background-color: #77b9ff33;
+
   border-radius: 15px;
   box-sizing: border-box; /* IMPORTANTE */
 }
@@ -220,7 +220,7 @@
 }
 
 .produtos-titulo {
-  background-color: #ffffff;
+  
   border-radius: 10px;
   padding: 3px;
   font-weight: bold;
@@ -228,7 +228,7 @@
 }
 
 .produto-descricao {
-  background-color: rgb(255, 255, 255); /* Branco transparente */
+ 
   border-radius: 8px;
   padding: 10px;
   margin-bottom: 15px;
@@ -237,7 +237,7 @@
 }
 
 .produto-detalhes {
-  background-color: rgb(255, 255, 255); /* Branco transparente */
+  
   border-radius: 8px;
   padding: 10px;
   margin-bottom: 15px;
@@ -271,8 +271,8 @@ details[open] .preparo-conteudo {
 }
 
 .produto-preparo {
-  background-color: rgb(255, 255, 255); /* Branco transparente */
-  border-radius: 8px;
+  
+  
   padding: 10px;
   margin-bottom: 15px;
   color: #9e4223;
@@ -297,7 +297,5 @@ details[open] .preparo-conteudo {
   font-size: 30px;
   font-weight: bold;
   color: #9e4223;
-  background-color: #ffffff;
-  border-radius: 10px;
   padding: 2px;
 }
