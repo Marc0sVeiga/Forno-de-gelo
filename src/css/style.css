@@ -144,17 +144,38 @@
   align-items: center;
   border-radius: 15px;
   margin: 2rem 0; /* Mesma margem do .sobre */
+  position: relative;
+  overflow: hidden;
+}
+
+.produtos-container {
+  display: flex;
+  
+  overflow-x: hidden; /* MUDE para hidden */
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.produtos-container::-webkit-scrollbar {
+  display: none;
 }
 
 .card-produto {
+  min-width: 100%; /* Ocupa 100% do container */
+  max-width: 100%;
+  scroll-snap-align: start; /* Para na posição exata */
+  flex-shrink: 0;
   display: flex;
-  flex-direction: row; /* Garante que fiquem lado a lado */
-  align-items: flex-start; /* Alinha o conteúdo pelo topo */
-  gap: 20px; /* Espaço entre a imagem e o texto */
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
   padding: 20px;
-  background-color: #77b9ff33; /* Cor que aparece na sua imagem */
+  background-color: #77b9ff33;
   border-radius: 15px;
-  margin-bottom: 20px;
+  box-sizing: border-box; /* IMPORTANTE */
 }
 
 .cardapio-titulo {
@@ -177,7 +198,8 @@
 /* A caixa da imagem */
 .card-imagem {
   flex-shrink: 0; /* Não deixa a imagem "esmagar" */
-  max-width:450px;  
+  max-width: 450px;
+  overflow: hidden;
 }
 
 .card-imagem img {
@@ -185,20 +207,22 @@
   height: auto;
   border-radius: 10px;
   display: block;
+  object-fit: cover;
 }
-.card-conteudo{
+.card-conteudo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 450px;
+  min-width: 400px;
   gap: 15px;
 }
 
 .produtos-titulo {
   background-color: #ffffff;
   border-radius: 10px;
-  padding: 3px; 
+  padding: 3px;
   font-weight: bold;
   color: #9e4223;
 }
@@ -213,7 +237,6 @@
 }
 
 .produto-detalhes {
- 
   background-color: rgb(255, 255, 255); /* Branco transparente */
   border-radius: 8px;
   padding: 10px;
@@ -230,6 +253,22 @@
 .sumary:hover {
   color: #9e4223;
 }
+.preparo-conteudo {
+  padding: 1rem;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1.2s ease-in-out;
+}
+
+details[open] .preparo-conteudo {
+  max-height: 800px; /* Ajuste conforme o tamanho real do conteúdo */
+}
+
+.preparo-conteudo p {
+  margin-bottom: 8px;
+  line-height: 1.2rem;
+  font-size: 14px;
+}
 
 .produto-preparo {
   background-color: rgb(255, 255, 255); /* Branco transparente */
@@ -238,10 +277,6 @@
   margin-bottom: 15px;
   color: #9e4223;
   font-weight: 500;
-}
-
-.preparo-conteudo {
-  gap: 2px;
 }
 
 .linha-produto {
@@ -264,5 +299,5 @@
   color: #9e4223;
   background-color: #ffffff;
   border-radius: 10px;
-  padding: 2px;  
+  padding: 2px;
 }
