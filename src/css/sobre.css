@@ -1,0 +1,22 @@
+.sobre {
+  height: 100%;
+  flex-grow: 1;
+  background: linear-gradient(135deg, #0c4a6e 0%, #075985 50%, #0369a1 100%);
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+.sobre-titulo {
+  padding: 2rem;
+  font-size: 1.05rem;
+  color: #ffffff;
+}
+
+.sobre-descricao {
+  letter-spacing: 0.05rem;
+}
