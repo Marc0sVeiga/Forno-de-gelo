@@ -1,8 +1,8 @@
 function scrollProdutos(direction) {
-  const container = document.querySelector('.produtos-container');
+  const container = document.querySelector(".produtos-container");
   const cardWidth = container.offsetWidth; // Largura exata do container
-  
-  if (direction === 'next') {
+
+  if (direction === "next") {
     container.scrollLeft += cardWidth;
   } else {
     container.scrollLeft -= cardWidth;
