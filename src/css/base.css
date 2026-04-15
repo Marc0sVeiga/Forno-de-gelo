@@ -18,14 +18,6 @@ main {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 7rem;
-}
-
-footer {
-  background: linear-gradient(135deg, #0c4a6e 0%, #075985 50%, #0369a1 100%);
-  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  position: relative;
 }
 
 .botao {

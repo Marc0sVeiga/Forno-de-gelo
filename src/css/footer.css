@@ -1,24 +1,40 @@
-.footer{
-    display: flex; 
-    justify-content: center;   
-    align-items: center;    
-    height: 300px;    
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 360px;
+  padding: 40px;
+  color: #ffffff;
+  font-size: 18px;
+  background: linear-gradient(135deg, #0c4a6e 0%, #075985 50%, #0369a1 100%);
+  margin-top: 2.5rem;
 }
 
-.footer-conteudo{
-    text-align: center;
+.footer-conteudo {
+  text-align: center;
 }
 
-.container-contato{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 950px;
+.gif-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.container-contato {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 950px;
+}
 
+.icone {
+  width: 70px;
+  height: 70px;
+}
 
-.icone{
-    width: 50px;
-    height: 50px
+.whatsapp-contato a,
+.instagram-contato a {
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
 }

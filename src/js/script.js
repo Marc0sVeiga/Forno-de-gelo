@@ -12,7 +12,7 @@ function scrollProdutos(direction) {
 // Gerador de neve
 function criarNeve() {
   const neveContainer = document.querySelector(".neve-container");
-  const quantidade = 50;
+  const quantidade = 25;
 
   for (let i = 0; i < quantidade; i++) {
     const floco = document.createElement("div");
