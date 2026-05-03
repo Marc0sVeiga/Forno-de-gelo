@@ -29,3 +29,23 @@ function criarNeve() {
 
 // Iniciar neve quando a página carregar
 window.addEventListener("load", criarNeve);
+
+// Menu flutuante
+
+const fabMenu = document.querySelector('.fab-menu');
+const dropdownMobile = document.querySelector('.dropdown-mobile');
+
+fabMenu.addEventListener('click', () => {
+  const estaAberto = dropdownMobile.classList.contains('aberto');
+
+  dropdownMobile.classList.toggle('aberto');
+  fabMenu.setAttribute('aria-expanded', !estaAberto);
+});
+
+// Fecha ao clicar fora
+document.addEventListener('click', (e) => {
+  if (!fabMenu.contains(e.target) && !dropdownMobile.contains(e.target)) {
+    dropdownMobile.classList.remove('aberto');
+    fabMenu.setAttribute('aria-expanded', 'false');
+  }
+});

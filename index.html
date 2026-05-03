@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forno de Gelo - Alimentos Congelados</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <meta
       name="description"
       content="Alimentos congelados artesanais com receitas de família. Forno de Gelo traz o sabor da cozinha tradicional sul-mato-grossense direto para seu freezer. Qualidade e tempero caseiro."
@@ -65,26 +69,36 @@
   <!-- corpo "body abrange tudo" -->
   <body>
     <header class="cabecalho">
-      <div class="navegacao-container">
-        <a href="/" title="Forno de Gelo - Alimentos Congelados">
-          <h1 class="logo">
-            <img
-              src="./src/images/imagem-logo.png"
-              alt="Forno de Gelo - Alimentos Congelados"
-            />
-          </h1>
-        </a>
+  
+  <!-- desktop: nav normal -->
+  <nav class="navegacao-desktop">
+    <a href="/" class="logo-desktop">
+      <img src="./src/images/imagem-logo.png" alt="Forno de Gelo" />
+    </a>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="./sobre.html" target="_blank">Sobre</a></li>
+      <li><a href="#produtos">Cardápio</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
 
-        <nav class="navegacao">
-          <ul>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#produtos">Cardápio</a></li>
-            <li><a href="#contato">Contato</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <!-- mobile: botão flutuante separado -->
+  <button class="fab-menu" aria-label="Abrir menu" aria-expanded="false">
+    <img src="./src/images/imagem-logo.png" alt="Menu" />
+  </button>
+
+  <!-- dropdown mobile -->
+  <nav class="dropdown-mobile" aria-hidden="true">
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="./sobre.html" target="_blank">Sobre</a></li>
+      <li><a href="#produtos">Cardápio</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+</header>
 
     <!-- Conteúdo principal: main -->
     <main>
@@ -327,54 +341,34 @@
       </section>
       <!-- fim seção produtos -->
     </main>
- 
-    <footer class="footer" id="footer">
-        
-      <div class="footer-conteudo">
-        
-        <div class="gif-container">
-          <img src="./src/images/coffee-capivara.gif" alt="Gif de uma capivara tomando café" class="gif-capivara"/>
-        </div>
-        
-        <div class="footer-info">
-          <h3>Forno de Gelo</h3>
-          <p>Alimentos congelados com tempero de mãe</p>
+
+    <footer class="rodape" id="contato">
+      <nav class="navegacao">
+        <div class="gif-capivara" title="Forno de Gelo">
+          <img
+            src="./src/images/coffee-capivara.gif"
+            alt="Logo Forno de Gelo"
+            class="imagem"
+          />
+          <span class="titulo">Forno de Gelo</span>
         </div>
 
-        <div class="container-contato">
-          <div class="whatsapp-contato">
-              <a
-              href="https://wa.me/5567999249746?text=Olá!%20Vim%20pelo%20site%20do%20Forno%20de%20Gelo%20e%20gostaria%20de%20fazer%20um%20pedido"
-              target="_blank"
-              title="Abrir no WhatsApp"
-              class="botao-whatsapp"
-            >
-              <img
-                class="icone whatsapp"
-                src="./src/icones/carrinho-de-compras.png"
-                alt="Ícone WhatsApp"
-              />
-            </a>
-          </div>
-
-           <div class="instagram-contato">
-            <a href="#" aria-label="Instagram">
-            <img
-              class="icone instagram"
-              src="./src/icones/instagram.png"
-              alt="Ícone Instagram"
-              width="30"
-              height="30"
-            />
+        <div class="redes-sociais">
+          <a
+            href="https://wa.me/5567999249746?text=Olá!%20Vim%20pelo%20site%20do%20Forno%20de%20Gelo%20e%20gostaria%20de%20fazer%20um%20pedido"
+            target="_blank"
+            class="rede-social"
+            title="WhatsApp"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="#" class="rede-social" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
           </a>
         </div>
-      </div>      
+      </nav>
 
-      <div class="direitos">
-        
-        <p>&copy; 2025 Todos os direitos reservados.</p>
-      </div>
-
+      <p class="copyright">© 2025 Todos os direitos reservados.</p>
     </footer>
 
     <div class="neve-container"></div>

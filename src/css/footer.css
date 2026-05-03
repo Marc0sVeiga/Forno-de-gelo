@@ -1,40 +1,85 @@
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 360px;
-  padding: 40px;
+/* RODAPÉ - Forno de Gelo */
+
+.rodape {
+  padding: 80px 0 20px 0;
+  background: linear-gradient(135deg, #15394e 0%, #3a7696 50%, #ffffff 100%);
   color: #ffffff;
-  font-size: 18px;
-  background: linear-gradient(135deg, #0c4a6e 0%, #075985 50%, #0369a1 100%);
   margin-top: 2.5rem;
 }
 
-.footer-conteudo {
-  text-align: center;
+.rodape .navegacao {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.gif-container {
+.rodape .navegacao .gif-capivara {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #ffffff;
+  cursor: default;
+}
+
+.rodape .navegacao .gif-capivara .imagem {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.rodape .navegacao .gif-capivara .titulo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.rodape .redes-sociais {
+  display: flex;
+}
+
+.rodape .redes-sociais a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 10px;
+  border: 2px solid #ffffff;
+  padding: 15px;
+  width: 65px;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  font-size: 30px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
-.container-contato {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 950px;
+.rodape .redes-sociais a:hover {
+  background-color: #9E4223;
+  border-color: #9E4223;  
 }
 
-.icone {
-  width: 70px;
-  height: 70px;
+.rodape .copyright {
+  margin-top: 70px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.8;
 }
 
-.whatsapp-contato a,
-.instagram-contato a {
-  display: inline-block;
-  background-size: cover;
-  background-position: center;
+/* RESPONSIVO */
+
+@media (max-width: 940px) {
+  .rodape .navegacao {
+    justify-content: center;
+  }
+
+  .rodape .navegacao .gif-capivara {
+    margin-bottom: 30px;
+  }
+
+  .rodape .navegacao .gif-capivara,
+  .rodape .navegacao .redes-sociais {
+    width: 100%;
+    justify-content: center;
+  }
 }

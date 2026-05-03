@@ -1,57 +1,168 @@
+/* ── DESKTOP ── */
 .cabecalho {
   position: fixed;
   top: 2rem;
   left: 50%;
-  transform: translate(-50%);
-  width: calc(100% - 210px);
+  transform: translateX(-50%);
+  width: min(1250px, calc(100% - 4rem));
   border-radius: 15px;
   z-index: 999;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 32px;
+  padding: 0 32px;
   background-color: #ffffff;
 }
-.navegacao-container {
+
+.navegacao-desktop {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  /* garante que o container ocupe toda a largura disponível */
 }
 
-.navegacao-container a:hover img {
-  opacity: 0.7;
-}
-
-.logo img {
-  height: 3.95rem;
-  display: block;
-  object-fit: cover;
-}
-
-.navegacao {
-  display: flex;
-  align-items: center;
-}
-
-.navegacao ul {
+.navegacao-desktop ul {
   display: flex;
   gap: 3.75rem;
   list-style: none;
 }
 
-.navegacao a {
+.navegacao-desktop a {
   color: #9e4223;
   font-weight: 400;
   font-size: 1.15rem;
 }
 
-.navegacao a:hover {
-  font-weight: 500;
-  font-size: 1.2rem;
-  color: #0369a1;
-  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.8);
-  border-radius: 10px;
-  transition: 0.5s ease;
+.navegacao-desktop a:hover {
+  color: #002a40;
+}
+
+.logo-desktop img {
+  height: 3.95rem;
+  display: block;
+}
+
+/* FAB e dropdown ficam escondidos no desktop */
+.fab-menu,
+.dropdown-mobile {
+  display: none;
+}
+@media (max-width: 1280px) {
+  .cabecalho {
+    width: calc(100% - 200px);
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-container {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 200px;
+    flex-direction: column;
+    padding: 80px 20px 20px;
+    background-color: #ffffff;
+    gap: 2rem;
+    transition: right 0.3s ease;
+    align-items: flex-start;
+  }
+  .menu-toggle:checked ~ .menu-container {
+    right: 0;
+  }
+}
+
+@media (max-width: 975px) {
+  .nav-container {
+    margin-left: 0;
+  }
+   .navegacao {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Esconde o header desktop inteiro */
+  .cabecalho {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    width: auto;
+    padding: 0;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navegacao-desktop {
+    display: none;
+  }
+
+  /* FAB — o botão circular flutuante */
+  .fab-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffffff;
+    padding: 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .fab-menu img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+
+  .fab-menu:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Dropdown — escondido por padrão */
+  .dropdown-mobile {
+    display: block;
+    position: fixed;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 16px 32px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    min-width: 180px;
+    opacity: 0;
+    pointer-events: none; /* não clicável quando fechado */
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
+
+  .dropdown-mobile ul {
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+    list-style: none;
+    display: flex;
+  }
+
+  .dropdown-mobile a {
+    color: #9e4223;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  /* Estado aberto — controlado pelo JS via classe */
+  .dropdown-mobile.aberto {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: all;
+  }
 }
