@@ -74,7 +74,7 @@
   .nav-container {
     margin-left: 0;
   }
-   .navegacao {
+  .navegacao {
     display: none;
   }
   .menu-icon {
@@ -82,7 +82,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   /* Esconde o header desktop inteiro */
   .cabecalho {
     background: transparent;
@@ -112,7 +112,9 @@
     padding: 6px;
     cursor: pointer;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
   }
 
   .fab-menu img {
@@ -131,26 +133,27 @@
   .dropdown-mobile {
     display: block;
     position: fixed;
-    top: 130px;
+    top: 85px;
     left: 50%;
     transform: translateX(-50%) translateY(-10px);
     background-color: #ffffff;
     border-radius: 12px;
-    padding: 16px 32px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     z-index: 1000;
-    min-width: 180px;
+    min-width: 145px;
     opacity: 0;
     pointer-events: none; /* não clicável quando fechado */
-    transition: opacity 0.25s ease, transform 0.25s ease;
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease;
   }
 
   .dropdown-mobile ul {
-    flex-direction: column;
-    gap: 1.2rem;
-    align-items: center;
-    list-style: none;
     display: flex;
+    flex-direction: column;
+    justify-content: center; /* centraliza verticalmente */
+    align-items: center; /* centraliza horizontalmente */
+    gap: 1.2rem;
+    list-style: none;
   }
 
   .dropdown-mobile a {
