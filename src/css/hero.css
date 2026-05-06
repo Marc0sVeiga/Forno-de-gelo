@@ -50,3 +50,18 @@
   text-align: center;
   align-items: center;
 }
+
+@media (max-width: 800px) {
+   main {
+    padding: 0;
+    max-width: 100%;
+  }
+  .secao-hero {
+    height: 100svh;
+    border-radius: 0 0 35px 35px;
+    margin: 0;
+    margin-bottom: -35px;
+    position: relative;
+    z-index: 1;
+  }  
+}

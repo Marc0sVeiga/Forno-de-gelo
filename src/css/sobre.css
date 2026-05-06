@@ -20,3 +20,9 @@
 .sobre-descricao {
   letter-spacing: 0.05rem;
 }
+
+@media (max-width: 800px) {
+  .sobre {
+    display: none;
+  }
+}

@@ -73,3 +73,15 @@ main {
 .btn-carousel:hover {
   background-color: #0369a1;
 }
+
+@media (max-width: 800px) {
+  body {
+    overflow-x: hidden; /* remove scroll lateral */
+  }
+
+  main {
+    padding: 0;
+    max-width: 100%;
+    margin: 0;
+  }
+}

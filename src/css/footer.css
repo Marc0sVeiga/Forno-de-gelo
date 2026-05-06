@@ -83,3 +83,9 @@
     justify-content: center;
   }
 }
+
+@media (max-width: 800px) {
+  .rodape {
+    margin-top: 0;
+  }
+}
